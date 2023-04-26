@@ -1,13 +1,16 @@
 <script setup lang="ts">
 const color= 'red';
-
+const title=' Interpolation can also handle conditional logic.';
+const isUpperCase=false;
 </script>
 
 <template>
     <div>
         <h1>My first component!</h1>
-        <span> {{ color }}</span>
+        <span> {{ color.toUpperCase() }}</span>
+        <p>{{ isUpperCase ? title.toUpperCase(): title}}</p>
     </div>
+    
 </template>
 
 <style>
